@@ -123,24 +123,27 @@ print("E-NFA to DFA")
 # Number of Transitions : no_transition
 # Array of Transitions : transitions
 
-nfa = NFA(
-    3,  # number of states
-    ['q0', 'q1', 'q2'],  # array of states
-    2,  # number of alphabets
-    ['0', '1'],  # array of alphabets
-    'q0',  # start state
-    1,  # number of final states
-    ['q2'],  # array of final states
-    4,  # number of transitions
-    [['q0', '0', 'q0'], ['q0', '1', 'q0'], ['q0', '1', 'q1'],
-     ['q1', '1', 'q2']]
+# FIXME:
+# nfa = NFA(
+#     3,  # number of states
+#     ['q0', 'q1', 'q2'],  # array of states
+#     2,  # number of alphabets
+#     ['0', '1'],  # array of alphabets
+#     'q0',  # start state
+#     1,  # number of final states
+#     ['q2'],  # array of final states
+#     4,  # number of transitions
+#     [['q0', '0', 'q0'], ['q0', '1', 'q0'], ['q0', '1', 'q1'],
+#      ['q1', '1', 'q2']]
   
-    # array of transitions with its element of type :
-    # [from state, alphabet, to state]
-)
+#     # array of transitions with its element of type :
+#     # [from state, alphabet, to state]
+# )
 
-# nfa = NFA.fromUser() # To get input from user
-# print(repr(nfa)) # To print the quintuple in console
+# FIXME:
+
+nfa = NFA.fromUser() # To get input from user
+print(repr(nfa)) # To print the quintuple in console
 
 # Making an object of Digraph to visualize NFA diagram
 nfa.graph = Digraph()
